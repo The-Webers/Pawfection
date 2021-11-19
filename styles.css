@@ -1,0 +1,117 @@
+body{
+    font-family: 'Montserrat';
+    }
+    #title
+    {
+      background-color: #2f86a6;
+    }
+    .row{
+      padding: 4% 5%;
+    }
+    h1{
+      color: white;
+      font-family: 'Dosis', sans-serif;
+      font-size: 4rem;
+      line-height: 1.5;
+    }
+    h2{
+      font-family: 'Montserrat-bold';
+      font-size: 3rem;
+      line-height: 1.5;
+    }
+    h3{
+      font-family: 'Montserrat-bold';
+      font-size: 2.5rem;
+    }
+    h4{
+      font-family: 'Montserrat';
+      font-size: 2rem;
+    }
+    p{
+      color: grey;
+    }
+    .icon{
+      color: #EB92BE;
+      padding-bottom: 10px;
+    }
+    .icon:hover{
+      color:#ED50F1;
+    }
+    #features{
+      background-color: #fff;
+      text-align: center;
+      padding: 8rem;
+    
+    }
+    .container-fluid{
+    
+      padding:3% 15%;
+    }
+    .download-button{
+      margin:5% 3% 5% 0;
+    }
+    /* navigation-bar */
+    .navbar{
+      padding: 0 0 4.5rem;
+    }
+    .navbar-brand{
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .nav-item{
+      padding: 0 18px;
+    }
+    .nav-link{
+      font-family: 'Montserrat-light';
+      font-size: 1.2rem;
+    }
+    /* title image */
+    .title-image{
+    width: 130%;
+    border-radius: 50%;
+    }
+    .feature-box{
+    padding: 5%;
+    }
+    /* testimonial section 864879 */
+    #testimonials{
+      text-align: center;
+      background-color: #864879;
+      color: #fff;
+    }
+    .carousel-item{
+      padding: 7% 15%;
+    
+    }
+    .testimonial-image{
+      border-radius: 50%;
+      width: 20%;
+      margin: 20px;
+    }
+    
+    /* pricing section */
+    #pricing{
+      padding:10%;
+      text-align: center;
+    }
+    .pricing-column{
+      padding-top: 20px;
+    
+    }
+    #cta{
+    color: white;
+      text-align: center;
+      background-color: #2f86a6;
+      padding: 15% 15%;
+    }
+    #footer{
+    
+      text-align: center;
+      padding :5%;
+    }
+    .animal-img{
+      width: 100%;
+    }
+    .animal-1-img{
+      width: 70%;
+    }
