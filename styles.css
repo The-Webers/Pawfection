@@ -65,6 +65,12 @@ body{
       font-family: 'Montserrat-light';
       font-size: 1.2rem;
     }
+    .dropdown-menu{
+      font-family: 'Montserrat-light';
+      background-color: #d1dbdf;
+      border-radius: 10px;
+      border-color: #fff;
+    }
     /* title image */
     .title-image{
     width: 130%;
@@ -97,6 +103,9 @@ body{
     .pricing-column{
       padding-top: 20px;
     
+    }
+    .card:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     }
     #cta{
     color: white;
