@@ -118,6 +118,14 @@ body{
       text-align: center;
       padding :5%;
     }
+    footer i{
+       color: black;
+       padding: 0%;
+       margin: 1rem;
+       box-sizing: border-box;
+       border-color: black;
+       
+    }
     .animal-img{
       width: 100%;
     }
