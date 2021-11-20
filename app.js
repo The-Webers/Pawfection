@@ -189,28 +189,28 @@ function showDogs(){
                 resolve(data.val())
                 
             } else {
-                console.log("reject")
+                //console.log("reject")
                 reject("Something went wrong")
             }
         })
     })
 
     promise.then(function (data) {
-        console.log("yes")
-        console.log(data)
+        //console.log("yes")
+        //console.log(data)
         prepareDogs(data)
              console.log("Check =>", check)
             addUser(check)
         })
 
         .catch(function (error) {
-            console.log(error)
+            //console.log(error)
             // pushData()
         })    
 }
 
 function prepareDogs(d) {
-    console.log("yes")
+    //console.log("yes")
     var userPosts = d
     var postId = [];
     for (var key in userPosts) {
