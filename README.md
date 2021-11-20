@@ -1,3 +1,3 @@
 # Pawfection
 Web development Contest
-(Pet adoption website)
+(Pet rehoming website)
