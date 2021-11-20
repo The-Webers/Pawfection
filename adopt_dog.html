@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>adopt dog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/images/logo1.jpg">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!-- bootstrap scripts -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- css stylesheets -->
+
+    <link rel="stylesheet" href="styles-1.css">
+    <link rel="icon" href="logo1.jpg">
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+    <script>
+      var firebaseConfig = {
+          apiKey: "AIzaSyCz1xVfgT4Zc_Ue_mv4ilXedXgm7dKlWRg",
+          authDomain: "pawfection-9937f.firebaseapp.com",
+          projectId: "pawfection-9937f",
+          storageBucket: "pawfection-9937f.appspot.com",
+          messagingSenderId: "478460032669",
+          appId: "1:478460032669:web:e4ef4849e491a6ea130674",
+          measurementId: "G-37M2FDW4V4"
+};
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+  </head>
+  <body onload="showDogs()">
+    <section id="title">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg  navbar-dark">
+          <a class="navbar-brand" href="">pawfection <i class="fas fa-paw"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"onclick="dropdown()" data-bs-toggle="dropdown" aria-expanded="false">
+               Adopt
+             </a>
+             <ul class="dropdown-menu"  id="myDropdown" aria-labelledby="navbarDropdown">
+               <li><a class="dropdown-item" href="adopt_dog.html">Dog</a></li>
+               <li><a class="dropdown-item" href="adopt_cat.html">Cat</a></li>
+             </ul>
+           </li> 
+              <li class="nav-item">
+                <a class="nav-link" href="donate.html">Donate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blogs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+<h1>dogs available for adoption nearby</h1>
+    </section>
+
+    <section id="dogs-for-adoption">
+      <!-- Fresh Recommendations ================================================================================= -->
+      <div class="fresh_rec">
+        <div>
+            <h4>Fresh Reccomendations</h4>
+        </div>
+
+        <div class="row" id="productContainer">
+
+        </div>
+
+    </div>
+
+
+      <div class="row">
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+
+            <div class="card-body">
+              <img class="card-img-top animal-1-img" src="images/doberman.jpg" alt="doberman-img">
+            </div>
+            <div class="card-footer">
+                <h4>Klaus</h4>
+            </div>
+            <div class="card-footer">
+                <h4>Doberman</h4>
+            </div>
+            <div class="card-footer">
+                <h4>4 months</h4>
+            </div>
+            <div class="card-footer">
+                <h4>black</h4>
+            </div>
+
+            
+
+
+          </div>
+
+        </div>
+        
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+
+            <div class="card-body">
+              <img class="card-img-top animal-1-img" src="images/pug.jpg" alt="pug-img">
+            </div>
+            <div class="card-footer">
+                <h4>charlie</h4>
+            </div>
+            <div class="card-footer">
+                <h4>pug</h4>
+            </div>
+            <div class="card-footer">
+                <h4>6 months</h4>
+            </div>
+            <div class="card-footer">
+                <h4>brown</h4>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+
+            <div class="card-body">
+              <img class="card-img-top animal-1-img" src="images/poodle.jpg" alt="poodle-img">
+            </div>
+            <div class="card-footer">
+                <h4>denver</h4>
+            </div>
+            <div class="card-footer">
+                <h4>poodle</h4>
+            </div>
+            <div class="card-footer">
+                <h4>5 months</h4>
+            </div>
+            <div class="card-footer">
+                <h4>brown</h4>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+
+            <div class="card-body">
+              <img class="card-img-top animal-1-img" src="images/rottweiler.jpg" alt="rottweiler-img">
+            </div>
+            <div class="card-footer">
+                <h4>bern</h4>
+            </div>
+            <div class="card-footer">
+                <h4>rottweiler</h4>
+            </div>
+            <div class="card-footer">
+                <h4>7 months</h4>
+            </div>
+            <div class="card-footer">
+                <h4>black</h4>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+
+            <div class="card-body">
+              <img class="card-img-top animal-1-img" src="images/german-shepherd.jpg" alt="german-shepherd-img">
+            </div>
+            <div class="card-footer">
+                <h4>bruno</h4>
+            </div>
+            <div class="card-footer">
+                <h4>german-shepherd</h4>
+            </div>
+            <div class="card-footer">
+                <h4>4 months</h4>
+            </div>
+            <div class="card-footer">
+                <h4>black brown</h4>
+            </div>
+
+
+
+          </div>
+
+        </div>
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+
+            <div class="card-body">
+              <img class="card-img-top animal-1-img" src="images/chihuahua.jpg" alt="chihuahua-img">
+            </div>
+            <div class="card-footer">
+                <h4>chatas</h4>
+            </div>
+            <div class="card-footer">
+                <h4>chihuahua</h4>
+            </div>
+            <div class="card-footer">
+                <h4>3 months</h4>
+            </div>
+            <div class="card-footer">
+                <h4>white brown</h4>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+
+            <div class="card-body">
+              <img class="card-img-top animal-1-img" src="images/bull-terrier.jpg" alt="bull-terrier-img">
+            </div>
+            <div class="card-footer">
+                <h4>mator</h4>
+            </div>
+            <div class="card-footer">
+                <h4>bull-terrier</h4>
+            </div>
+            <div class="card-footer">
+                <h4>4 months</h4>
+            </div>
+            <div class="card-footer">
+                <h4>skinny white</h4>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+
+            <div class="card-body">
+              <img class="card-img-top animal-1-img" src="images/bull-mastif.jpg" alt="bull-mastif-img">
+            </div>
+            <div class="card-footer">
+                <h4>milo</h4>
+            </div>
+            <div class="card-footer">
+                <h4>bull mastif</h4>
+            </div>
+            <div class="card-footer">
+                <h4>4 months</h4>
+            </div>
+            <div class="card-footer">
+                <h4>hard brown</h4>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+
+            <div class="card-body">
+              <img class="card-img-top animal-1-img" src="images/chow-chow.jpg" alt="chow-chow-img">
+            </div>
+            <div class="card-footer">
+                <h4>jasper</h4>
+            </div>
+            <div class="card-footer">
+                <h4>chow chow</h4>
+            </div>
+            <div class="card-footer">
+                <h4>3 months</h4>
+            </div>
+            <div class="card-footer">
+                <h4>white</h4>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+
+            <div class="card-body">
+              <img class="card-img-top animal-1-img" src="images/golden-retriever.jpg" alt="golden-ret-img">
+            </div>
+            <div class="card-footer">
+                <h4>ruger</h4>
+            </div>
+            <div class="card-footer">
+                <h4>golden-retriever</h4>
+            </div>
+            <div class="card-footer">
+                <h4>8 months</h4>
+            </div>
+            <div class="card-footer">
+                <h4>golden</h4>
+            </div>
+
+
+          </div>
+
+        </div>
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+
+            <div class="card-body">
+              <img class="card-img-top animal-1-img" src="images/labrador.jpg" alt="labrador-img">
+            </div>
+            <div class="card-footer">
+                <h4>Bruno</h4>
+            </div>
+            <div class="card-footer">
+                <h4>labrador</h4>
+            </div>
+            <div class="card-footer">
+                <h4>6 months</h4>
+            </div>
+            <div class="card-footer">
+                <h4>white brown</h4>
+            </div>
+
+
+
+          </div>
+
+        </div>
+        <div class="pricing-column col-lg-4 col-md-6">
+          <div class="card">
+
+            <div class="card-body">
+              <img class="card-img-top animal-1-img" src="images/huskey.jpg" alt="huskey-img">
+            </div>
+            <div class="card-footer">
+                <h4>chip</h4>
+            </div>
+            <div class="card-footer">
+                <h4>huskey</h4>
+            </div>
+            <div class="card-footer">
+                <h4>4 months</h4>
+            </div>
+            <div class="card-footer">
+                <h4>black white</h4>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+      </div>
+
+       
+    <!-- Footer ==================================================================================== -->
+
+    </section>
+    <footer id="footer">
+      <button type="button"  class="btn btn-outline-light btn-lg download-button"><i class="fab fa-twitter fa-2x"></i></button>
+      <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-facebook fa-2x"></i></button>
+        <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-instagram fa-2x"></i></button>
+
+      <p>© Copyright 2021 pawfection</p>
+
+    </footer>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1c04803a59.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>

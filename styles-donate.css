@@ -1,0 +1,87 @@
+body{
+    font-family: 'Montserrat';
+}
+    h1{
+      color: white;
+      font-family: 'Dosis', sans-serif;
+      font-size: 4rem;
+      line-height: 1.5;
+    }
+    h2{
+      color: white;
+      font-family: 'Dosis', sans-serif;
+      font-size: 2rem;
+      line-height: 1.5;
+    }
+    .center {
+      position: relative;
+      padding: 50px 50px;
+      background: #fff;
+      border-radius: 10px;
+    }
+    form{
+      width: 80%;
+      padding: 10% 20%;
+      margin-left: 14%;
+    }
+  
+    .center.form-group-row input{
+      width: 300px;
+      height: 50px;
+      margin-bottom: 50px;
+      border: 2px solid #000;
+      background: none;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 1.2em;
+        }
+     label{
+       font-weight: bolder;
+     }   
+
+    #details{
+      background-color: #EEEEEE;
+    }
+    #title
+    {
+      background-color: #2f86a6;
+      padding-bottom: 10%;
+      text-align: center;
+    }
+    .container-fluid{
+    
+      padding:3% 15%;
+    }
+    /* navbar */
+    .navbar{
+      padding: 0 0 2.5rem;
+    }
+    .navbar-brand{
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .nav-item{
+      padding: 0 18px;
+    }
+    .nav-link{
+      font-family: 'Montserrat-light';
+      font-size: 1.2rem;
+    }
+    .form-group{
+      padding: 2%;
+    }
+    .form-check{
+      padding: 0 10%;
+    }
+    .download-button{
+      padding: 2% 2%;
+      margin: 5% 15%;
+    }
+    #footer{
+      background-color:#2f86a6;
+      text-align: center;
+      padding :5%;
+    }
+    .download-button-1{
+      margin:5% 3% 5% 0;
+    }

@@ -28,6 +28,21 @@
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/1c04803a59.js" crossorigin="anonymous"></script>
 
+  <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+    <script>
+         var firebaseConfig = {
+            apiKey: "AIzaSyCz1xVfgT4Zc_Ue_mv4ilXedXgm7dKlWRg",
+            authDomain: "pawfection-9937f.firebaseapp.com",
+            projectId: "pawfection-9937f",
+            storageBucket: "pawfection-9937f.appspot.com",
+            messagingSenderId: "478460032669",
+            appId: "1:478460032669:web:e4ef4849e491a6ea130674",
+            measurementId: "G-37M2FDW4V4"
+  };
+        firebase.initializeApp(firebaseConfig);
+      </script>
+
 </head>
 
 <body>
@@ -49,19 +64,22 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item dropdown">
            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"onclick="dropdown()" data-bs-toggle="dropdown" aria-expanded="false">
-             adopt
+             Adopt
            </a>
            <ul class="dropdown-menu"  id="myDropdown" aria-labelledby="navbarDropdown">
-             <li><a class="dropdown-item" href="">Dog</a></li>
-             <li><a class="dropdown-item" href="">Cat</a></li>
+             <li><a class="dropdown-item" href="adopt_dog.html">Dog</a></li>
+             <li><a class="dropdown-item" href="adopt_cat.html">Cat</a></li>
            </ul>
          </li> 
 
             <li class="nav-item">
-              <a class="nav-link" href="">donate</a>
+              <a class="nav-link" href="donate.html">Donate</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="">contact us</a>
+              <a class="nav-link" href="blog.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
             </li>
           </ul>
         </div>
@@ -256,7 +274,7 @@
 
   </footer>
 
-<!-- <script src="app.js"></script> -->
+<script src="app.js"></script>
 </body>
 
 </html>

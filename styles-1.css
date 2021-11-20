@@ -1,0 +1,67 @@
+body{
+    font-family: 'Montserrat';
+    }
+    #title{
+      background-color:  #2f86a6;
+      padding-bottom: 15%;
+    }
+    .container-fluid{
+    
+      padding:3% 15%;
+    }
+    .card{
+    
+        margin: 5%;
+    }
+    h1{
+      color: white;
+      font-family: 'Dosis', sans-serif;
+      font-size: 4rem;
+      line-height: 1.5;
+      text-align: center;
+      padding-top: 5%;
+    }
+    .animal-img{
+      width: 90%;
+    }
+    .animal-1-img{
+      width: 70%;
+      height: 20%;
+    }
+    #dogs-for-adoption{
+      background-color: #E6E6E6;
+      padding:10%;
+      text-align: center;
+    }
+    .row {
+        padding-bottom: 15%;
+    }
+    .navbar{
+      padding: 0 0 2.5rem;
+    }
+    
+    .nav-item{
+      padding: 0 18px;
+    }
+    .nav-link{
+      font-family: 'Montserrat-light';
+      font-size: 1.2rem;
+    }
+    .navbar-brand{
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .card-img-top {
+        width: 100%;
+        height: 15vw;
+        object-fit: cover;
+    }
+    #footer{
+    background-color:#2f86a6;
+      text-align: center;
+      padding :5%;
+      color: white;
+    }
+    .download-button{
+      margin:5% 3% 5% 0;
+    }
